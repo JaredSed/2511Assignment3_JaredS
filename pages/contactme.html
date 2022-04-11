@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+		<meta charset="utf-8">
+		<meta name="author" content="Jared Sedran"/>
+		<meta name="keywords" content="Jared Sedran, Resume"/>
+		<meta name="description" content="Contact Me for Jared Sedran's Resume"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="../reset.css"
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../style/contactme.css">
+
+		<title>Jared Sedran</title>
+		
+        <style>
+            body 
+            {
+                background-color: whitesmoke;
+            }
+
+            a:hover 
+            {
+                color: cadetblue;
+            }
+
+            a:active 
+            {
+                background-color: whitesmoke;
+            }
+        </style>
+	</head>
+    
+
+    <body>
+    <div id="detail1"></div>
+    <header>
+            <a href="./homepage.html">
+            <img src="../images/jsLogo.png" title="JS Logo" alt="" id="jsLogo">
+            </a>
+        <nav>
+
+        <div class="wrapper">
+        <div id="tabs">
+            <div class="menus" id="tab2">
+                <a href="./homepage.html" style="text-decoration: none;"> Home </a>
+            </div>
+
+            <div class="menus" id="tab3">
+                <a href="./aboutjared.html" style="text-decoration: none;"> About Jared </a>
+            </div>
+
+            <div class="menus" id="tab4">
+                <a href="./contactme.html" style="text-decoration: none;"> Contact Me </a>
+            </div> 
+        </div>
+        </div>
+
+        </nav>
+    </header>
+    <div id="detail1"></div>
+    <main>
+        <form method="POST" action="mailto:jsedr573@mtroyal.ca" name="Contact Us Information" enctype="multipart/form-data">
+            <h1>Contact Me</h1>
+
+            <fieldset>
+                <label id="field">Email:<sup>*</sup>
+                    <input type="text" name="Email" value="" placeholder="example@email.com" size="30" maxlength="50" required>
+                </label>
+
+                <br/>
+
+                <label id="field">Phone:
+                    <input type="tel" name="Phone Number" placeholder="xxx-xxx-xxxx" size="30" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>                
+                </label>
+
+                <br/>
+
+                <label>Current Date:
+                    <input type="date" name="Current Date">
+                </label>
+
+                <br/><br/><br/>
+
+                <fieldset id="inner">
+                    <label>Subject
+                        <input type="text" value="" size="30" maxlength="25" placeholder="Subject" required>
+                    </label>
+
+                    <br/>
+
+                    <label id="commentbox">Enter your comments here
+                        <br/>
+                        <textarea name="comment" rows="20" cols="90" required></textarea>
+                    </label>
+                </fieldset>
+
+                <br/><br/>
+
+                
+                <!--Clear, return to defult values-->
+                <input class="submitandclear" id="clear" type="reset" value="Clear">
+
+                <!--Button on storing info given-->
+                <input class="submitandclear" id="submit" type="submit" value="Submit">
+
+            </fieldset>
+        </form>
+        <br>
+        <div id="detail1"></div>
+    </main>
+
+        <br/>
+
+        <footer>
+            <a>Connect With Me At:  &nbsp; &nbsp;</a>
+            <a href="https://www.linkedin.com/in/jared-sedran-b13549234" target="_blank">
+                <img src="../images/linkedin.png" alt="Linkedin Logo">
+            </a>
+        </footer>
+    </body>
+
+</html>
